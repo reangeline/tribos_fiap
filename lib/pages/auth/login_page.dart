@@ -44,12 +44,12 @@ class _LoginPageState extends State<LoginPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         const Text(
-                          "Groupie",
+                          "Fiap Tribos",
                           style: TextStyle(
                               fontSize: 40, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 10),
-                        const Text("Login now to see what they are talking!",
+                        const Text("Logue para criar e participar de aldeias e converse sobre seus temas preferidos!",
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.w400)),
                         Image.asset("assets/login.png"),
@@ -77,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
                         TextFormField(
                           obscureText: true,
                           decoration: textInputDecoration.copyWith(
-                              labelText: "Password",
+                              labelText: "Senha",
                               prefixIcon: Icon(
                                 Icons.lock,
                                 color: Theme.of(context).primaryColor,
@@ -89,7 +89,7 @@ class _LoginPageState extends State<LoginPage> {
                           },
                           validator: (val) {
                             if (val!.length < 6) {
-                              return "Password must be at least 6 caracters";
+                              return "Password deve ter pelo menos 6 digitos";
                             } else {
                               return null;
                             }
@@ -117,12 +117,12 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         const SizedBox(height: 10),
                         Text.rich(TextSpan(
-                            text: "Don't have an account? ",
+                            text: "Voce ainda nao tem conta? ",
                             style: const TextStyle(
                                 color: Colors.black, fontSize: 14),
                             children: [
                               TextSpan(
-                                text: "Register here",
+                                text: "Registre aqui",
                                 style: const TextStyle(
                                     color: Colors.black,
                                     decoration: TextDecoration.underline),

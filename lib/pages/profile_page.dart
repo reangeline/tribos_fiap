@@ -22,7 +22,7 @@ class _ProfilePageState extends State<ProfilePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
         elevation: 0,
-        title: const Text("Profile",
+        title: const Text("Perfil",
             style: TextStyle(
                 color: Colors.white,
                 fontSize: 27,
@@ -53,7 +53,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               leading: const Icon(Icons.group),
               title:
-                  const Text("Groups", style: TextStyle(color: Colors.black)),
+                  const Text("Tribos", style: TextStyle(color: Colors.black)),
             ),
             ListTile(
               onTap: () {},
@@ -63,7 +63,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               leading: const Icon(Icons.group),
               title:
-                  const Text("Profile", style: TextStyle(color: Colors.black)),
+                  const Text("Perfil", style: TextStyle(color: Colors.black)),
             ),
             ListTile(
               onTap: () async {
@@ -72,8 +72,8 @@ class _ProfilePageState extends State<ProfilePage> {
                     context: context,
                     builder: (context) {
                       return AlertDialog(
-                        title: const Text("Logout"),
-                        content: const Text("Are you sure you want to logout?"),
+                        title: const Text("sair"),
+                        content: const Text("Tem certeza que deseja sair?"),
                         actions: [
                           IconButton(
                             onPressed: () {
@@ -105,7 +105,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               leading: const Icon(Icons.exit_to_app),
               title:
-                  const Text("Logout", style: TextStyle(color: Colors.black)),
+                  const Text("Sair", style: TextStyle(color: Colors.black)),
             ),
           ],
         ),
@@ -125,7 +125,7 @@ class _ProfilePageState extends State<ProfilePage> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Text(
-                  "Full name",
+                  "Nome Completo",
                   style: TextStyle(fontSize: 17),
                 ),
                 Text(

@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
               icon: const Icon(Icons.search))
         ],
         title: const Text(
-          "Groups",
+          "Tribos",
           style: TextStyle(
               color: Colors.white, fontWeight: FontWeight.bold, fontSize: 27),
         ),
@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               leading: const Icon(Icons.group),
               title:
-                  const Text("Groups", style: TextStyle(color: Colors.black)),
+                  const Text("Tribos", style: TextStyle(color: Colors.black)),
             ),
             ListTile(
               onTap: () {
@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               leading: const Icon(Icons.group),
               title:
-                  const Text("Profile", style: TextStyle(color: Colors.black)),
+                  const Text("Perfil", style: TextStyle(color: Colors.black)),
             ),
             ListTile(
               onTap: () async {
@@ -129,8 +129,8 @@ class _HomePageState extends State<HomePage> {
                     context: context,
                     builder: (context) {
                       return AlertDialog(
-                        title: const Text("Logout"),
-                        content: const Text("Are you sure you want to logout?"),
+                        title: const Text("Sair"),
+                        content: const Text("Voce tem certeza que deseja sair?"),
                         actions: [
                           IconButton(
                             onPressed: () {
@@ -162,7 +162,7 @@ class _HomePageState extends State<HomePage> {
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               leading: const Icon(Icons.exit_to_app),
               title:
-                  const Text("Logout", style: TextStyle(color: Colors.black)),
+                  const Text("Sair", style: TextStyle(color: Colors.black)),
             ),
           ],
         ),
@@ -240,7 +240,7 @@ class _HomePageState extends State<HomePage> {
                       });
                       Navigator.of(context).pop();
                       showSnackbar(
-                          context, Colors.green, "Group created successfully.");
+                          context, Colors.green, "Tribo criada com sucesso");
                     }
                   },
                   style: ElevatedButton.styleFrom(
@@ -307,7 +307,7 @@ class _HomePageState extends State<HomePage> {
             height: 20,
           ),
           const Text(
-            "You've not joined any group, tap on the add icon to create a group or also search from top search button",
+            "Você não ingressou em nenhuma tribo, toque no ícone adicionar para criar uma tribo ou também pesquise no botão de pesquisa superior",
             textAlign: TextAlign.center,
           ),
         ],

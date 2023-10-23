@@ -70,7 +70,7 @@ class _SearchPageState extends State<SearchPage> {
                     style: const TextStyle(color: Colors.white),
                     decoration: const InputDecoration(
                         border: InputBorder.none,
-                        hintText: "Search groups....",
+                        hintText: "Procure tribos....",
                         hintStyle:
                             TextStyle(color: Colors.white, fontSize: 16)),
                   ),
@@ -175,7 +175,7 @@ class _SearchPageState extends State<SearchPage> {
             setState(() {
               isJoined = !isJoined;
             });
-            showSnackbar(context, Colors.green, "Successfully joined he group");
+            showSnackbar(context, Colors.green, "Você entrou na tribo!");
             Future.delayed(const Duration(seconds: 2), () {
               nextScreen(
                   context,
@@ -187,7 +187,7 @@ class _SearchPageState extends State<SearchPage> {
           } else {
             setState(() {
               isJoined = !isJoined;
-              showSnackbar(context, Colors.red, "Left the group $groupName");
+              showSnackbar(context, Colors.red, "Sair da tribo $groupName");
             });
           }
         },
@@ -212,7 +212,7 @@ class _SearchPageState extends State<SearchPage> {
                 ),
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                child: const Text("Join Now",
+                child: const Text("Entrar",
                     style: TextStyle(color: Colors.white)),
               ),
       ),

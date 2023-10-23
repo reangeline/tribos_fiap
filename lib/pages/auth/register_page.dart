@@ -41,19 +41,19 @@ class _RegisterPageState extends State<RegisterPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         const Text(
-                          "Groupie",
+                          "Tribos",
                           style: TextStyle(
                               fontSize: 40, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 10),
                         const Text(
-                            "Create your account now to chat and explore",
+                            "Crie sua conta agora para conversar",
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.w400)),
                         Image.asset("assets/register.png"),
                         TextFormField(
                           decoration: textInputDecoration.copyWith(
-                              labelText: "Full name",
+                              labelText: "Nome completo",
                               prefixIcon: Icon(
                                 Icons.person,
                                 color: Theme.of(context).primaryColor,
@@ -67,7 +67,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             if (val!.isNotEmpty) {
                               return null;
                             } else {
-                              return "Name cannot be empity";
+                              return "Nome nao pode ser nulo";
                             }
                           },
                         ),
@@ -89,7 +89,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
                                     .hasMatch(val!)
                                 ? null
-                                : "Please enter a valid email";
+                                : "Por favor entre com um email valido";
                           },
                         ),
                         const SizedBox(height: 15),
@@ -108,7 +108,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           },
                           validator: (val) {
                             if (val!.length < 6) {
-                              return "Password must be at least 6 caracters";
+                              return "Senha deve ter pelo menos 6 digitos";
                             } else {
                               return null;
                             }
@@ -125,7 +125,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                   borderRadius: BorderRadius.circular(30),
                                 )),
                             child: const Text(
-                              "Register",
+                              "Registrar",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 16),
                             ),
@@ -136,12 +136,12 @@ class _RegisterPageState extends State<RegisterPage> {
                         ),
                         const SizedBox(height: 10),
                         Text.rich(TextSpan(
-                            text: "already have an account? ",
+                            text: "Voce ja tem uma conta? ",
                             style: const TextStyle(
                                 color: Colors.black, fontSize: 14),
                             children: [
                               TextSpan(
-                                text: "Login now",
+                                text: "Entre agora",
                                 style: const TextStyle(
                                     color: Colors.black,
                                     decoration: TextDecoration.underline),
