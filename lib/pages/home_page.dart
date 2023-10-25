@@ -186,7 +186,7 @@ class _HomePageState extends State<HomePage> {
         builder: (context) {
           return StatefulBuilder(builder: ((context, setState) {
             return AlertDialog(
-              title: const Text("Create a group", textAlign: TextAlign.left),
+              title: const Text("Crie uma tribo", textAlign: TextAlign.left),
               content: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -223,7 +223,7 @@ class _HomePageState extends State<HomePage> {
                   },
                   style: ElevatedButton.styleFrom(
                       primary: Theme.of(context).primaryColor),
-                  child: const Text("CANCEL"),
+                  child: const Text("Cancelar"),
                 ),
                 ElevatedButton(
                   onPressed: () async {
@@ -245,7 +245,7 @@ class _HomePageState extends State<HomePage> {
                   },
                   style: ElevatedButton.styleFrom(
                       primary: Theme.of(context).primaryColor),
-                  child: const Text("CREATE"),
+                  child: const Text("Criar"),
                 ),
               ],
             );
